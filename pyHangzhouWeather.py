@@ -149,55 +149,7 @@ def weekday(date):
 	
 	return weekdays[index]
 
-def convert(lines):
-	dict_en    = {# day or night
-				  'daytime':    '白天',      \
-	              'nighttime':  '夜间',      \
-				  # weather
-				  'sun':        '晴',       \
-				  'cloudy':     '多云',      \
-				  # high or low temp
-				  'high':       '高温',      \
-				  'low':        '低温',      \
-				  # day format
-				  'date':  '日星期'
-				 }
-	
-	dict_cn    = {# day or night
-				  '白天':'daytime',         \
-	              '夜间':'nighttime',       \
-				  # weather
-				  '晴':'sun',              \
-				  '多云':'cloudy',          \
-				  # high or low temp
-				  '高温':'high',            \
-				  '低温':'low',             \
-				  # day format
-				  '日星期':'date'
-				 }
-
-	list = []
-	
-	for line in lines:
-	
-		if dict_cn.has_key(line):
-			list.append(dict_cn[line])
-			
-		elif line.find(dict_en['date']) != -1:
-			list.append('date')
-			
-		elif line[0] > '0' and line[1] < '9':
-			# BUG BUG BUG BUG BUG !!!!
-			list.append(int(line[:2]))
-			
-		else:
-			# Skip the fault
-			print "Error reported!"
-
-	return list
-
 if __name__ == "__main__":
 	process()
 	lines = read_weather("test.txt")
-	convert(lines)
-	#check_date()
+	

@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.rednews1
+{
+	clear:both;
+	width:650px;
+	height:347px;
+	*height:330px;
+	border:1px solid #c5d6ea;
+	margin:0 auto;
+	margin-bottom:10px;
+	*margin-bottom:0px;
+	margin-top:0px;
+	*margin-top:10px;
+	overflow:hidden;}
+.rednews1 h3
+{
+	margin:0;
+	float:none;
+	display:block;
+	background:#3365BA;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+	width:638px;
+	padding-left:12px;}
+.rednews1 dl
+{
+	width:250px;
+	margin:0 auto;
+	margin-left:20px;
+		margin-top:15px;
+	line-height:inherit;
+	float:left;
+	display:inline;
+	height:300px;
+	overflow:hidden;}
+.rednews1 dl dt
+{
+	text-align:center;
+	line-height:25px;
+	width:250px;
+}
+.rednews1 dl dd
+{
+	width:250px;
+	text-align:center;
+	text-indent:0;
+	margin-top:15;
+	line-height:25px;}
+.rednews1 .redlist1
+{
+	width:350px;
+	margin-top:10px;
+	display:inline;
+	margin-left:15px;
+	float:left;}
+.rednews1 .redlist1 ul
+{
+	height:130px;
+	border-bottom:1px dashed #d5e1ed;}
+.rednews1 .redlist1 ul li
+{
+	height:30px;
+         overflow:hidden;
+	background:url(http://www.weather.com.cn/m2/i/dian09.gif) no-repeat 0px 13px;
+	padding-left:10px;
+	line-height:30px;}
+.rednews1 .redlist1 ul li a
+{
+	font-size:14px;
+padding-right:10px;}
+.rednews1 .redlist1 ul.redsed
+{
+	margin-top:20px;
+	border:none;
+	}
+
+
+
+
+.alarm
+{
+height:auto;}

@@ -1,0 +1,4 @@
+mvas_10062952=1013817;mv_acquire=1;mv_bid=10062952;
+mvcu_10062952='http://show.g.mediav.com/c?type=2&db=mediav&oimpid=M1kxor-BXDtQ&pub=110985_511648_1013817&cus=20184_113357_1029546_10062952_0&ref=http%3A%2F%2Fwww.weather.com.cn%2Fweather%2F101210101.shtml&url=http://www.camel.com.cn/topic/Shangrila.shtml?chl=ju.mediav&utm_source=ju.mediav&utm_medium=cpc&utm_term=%E5%8E%BB%E7%88%B1%E5%90%A7927&utm_content=%E4%B8%AD%E5%9B%BD%E5%A4%A9%E6%B0%94%E7%BD%91&utm_campaign=9%E6%9C%884%E6%97%A5';
+
+eval('mediav_fini'+mvas_10062952+'=1');mediav.makeImage("http://material.mediav.com/galileo/20120927/bb0801f155b4d1b45f844fe123b406f4.jpg", mvcu_10062952, 385, 90, "10062952");

@@ -1,0 +1,4 @@
+mvas_10064524=1013773;mv_acquire=1;mv_bid=10064524;
+mvcu_10064524='http://show.g.mediav.com/c?type=2&db=mediav&oimpid=MSjK8Oz9Upx4&pub=110469_510748_1013773&cus=189_110733_1033212_10064524_0&ref=http%3A%2F%2Fwww.weather.com.cn%2Fweather%2F101210101.shtml&url=http://www.yksuit.com/?utm_campaign=weather120925&utm_medium=CPS&utm_source=MediaV&utm_content=weather_wudingxiang';
+
+eval('mediav_fini'+mvas_10064524+'=1');mediav.makeFlash(560, 90, "http://material.mediav.com/upload/20121008/0.607999001349677824.swf", 0, mvcu_10064524, "10064524", "Opaque");document.write('<iframe style="display:none" src="http://material.mediav.com/ckmap.htm#prefix=http://cm.g.doubleclick.net/pixel?google_nid=MEV&google_sc&google_cm&tid=3&mvck=pGPOx0MgUOmrGU18htbn7U&google_ula=2120766"></iframe>');

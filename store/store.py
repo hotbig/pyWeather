@@ -14,11 +14,15 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
-from weather import Weather
+import sys
+sys.path.append("..")
+from datetime import date, time, datetime, timedelta
+from definition.weather import *
 
 class Storage():
 	def __init__(self, file):
-		self.file = file
+		date = datetime.now().date()
+		self.file = "store/%s_%s" % (date, file)
 			
 	def write(self, items):
 		handle = open(self.file, 'w')

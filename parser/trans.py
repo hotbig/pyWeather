@@ -15,10 +15,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 # -*- coding: utf-8 -*-
-from datetime import date, time, datetime, timedelta
 import sys, cn2en
 sys.path.append("..")
-from weather import Weather
+from datetime import date, time, datetime, timedelta
+from definition.weather import Weather
 
 def dateweek(line, date):
 	""" Check if current line is the dateweek line, return boolean """

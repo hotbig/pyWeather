@@ -15,10 +15,10 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ################################################################################
 # -*- coding: utf-8 -*-
-from parser.parser import *
-from weather       import *
-from store         import *
-from settings      import *
+from definition.weather  import *
+from parser.parser       import *
+from store.store         import *
+from settings            import *
 import urllib
 
 def printf(city, weathers):

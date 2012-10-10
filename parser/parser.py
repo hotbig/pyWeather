@@ -17,9 +17,10 @@
 # -*- coding: utf-8 -*-
 import sys, re, cn2en
 sys.path.append("..")
-from HTMLParser import HTMLParser
-from trans import translate
-from store import Storage
+from HTMLParser  import HTMLParser
+from store.store import *
+from trans       import *
+
 
 # create a subclass and override the handler methods
 class MyHTMLParser(HTMLParser):
@@ -73,12 +74,10 @@ if __name__ == "__main__":
 	html = handle.read()
 
 	store = Storage("test.store")
-	store.open()
 	
 	parser = MyHTMLParser(store)
 	parser.feed(html)
-	store.close()
-	
+
 	weathers = store.read()
 	
 	for weather in weathers:

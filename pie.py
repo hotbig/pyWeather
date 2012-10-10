@@ -40,8 +40,7 @@ def fetch(city):
 	return handle.read()	
 
 def pie(city):
-	name = "%s.db" % city
-	store = Storage(name)
+	store = Storage(city)
 	
 	parser = MyHTMLParser(store)
 	

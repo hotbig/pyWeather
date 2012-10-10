@@ -20,9 +20,9 @@ from datetime import date, time, datetime, timedelta
 from definition.weather import *
 
 class Storage():
-	def __init__(self, file):
+	def __init__(self, city):
 		date = datetime.now().date()
-		self.file = "store/%s_%s" % (date, file)
+		self.file = "store/%s_%s.db" % (date, city)
 			
 	def write(self, items):
 		handle = open(self.file, 'w')

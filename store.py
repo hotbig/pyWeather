@@ -19,20 +19,18 @@ from weather import Weather
 class Storage():
 	def __init__(self, file):
 		self.file = file
-	
-	def open(self):
-		self.handle = open(self.file, 'w')
-		
-	def close(self):
-		self.handle.close()
-		
+			
 	def write(self, items):
+		handle = open(self.file, 'w')
+		
 		for item in items:
-			self.handle.write("%s " % item.date)
-			self.handle.write("%s " % item.time)
-			self.handle.write("%s " % item.weather)
-			self.handle.write("%s " % item.temp)
-			self.handle.write("\n")
+			handle.write("%s " % item.date)
+			handle.write("%s " % item.time)
+			handle.write("%s " % item.weather)
+			handle.write("%s " % item.temp)
+			handle.write("\n")
+		
+		handle.close()
 			
 	def read(self):
 		weathers = []

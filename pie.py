@@ -21,30 +21,37 @@ from store         import *
 from settings      import *
 import urllib
 
-def fetch_html(city):
+def printf(city, weathers):
+	print "[%s]" % city
+	print "--------------------------------------------"
+	
+	for weather in weathers:
+		weather.printf()
+
+	print "--------------------------------------------"
+	print ""
+
+def fetch(city):
 	proxies = HTTP_PROXY
 	url     = CITY_URLS[city]
 	
 	handle  = urllib.urlopen(url, proxies=proxies)
 	
-	return handle.read()
-	
-def pie_weather(city):
-	store = Storage("data.db")
-	store.open()
+	return handle.read()	
+
+def pie(city):
+	name = "%s.db" % city
+	store = Storage(name)
 	
 	parser = MyHTMLParser(store)
 	
-	html = fetch_html(city)
+	html = fetch(city)
 	parser.feed(html)
 	
-	store.close()
 	weathers = store.read()
-	
-	for weather in weathers:
-		weather.printf()
+	printf(city, weathers)
 	
 if __name__ == "__main__":
-	pie_weather("Hangzhou")
-	pie_weather("Ningbo")
+	pie("Hangzhou")
+	pie("Ningbo")
 

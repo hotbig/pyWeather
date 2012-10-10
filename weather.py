@@ -34,4 +34,5 @@ class Weather():
 		self.temp    = temp
 	
 	def printf(self):
-		print self.date, self.time, self.weather, self.temp
+		format = "%-14s%-13s%-10s%-10s"
+		print format % (self.date, self.time, self.weather, self.temp)

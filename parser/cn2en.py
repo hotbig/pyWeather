@@ -22,9 +22,9 @@ DATE_WEEK = '日星期'
 WEATHER   = {'晴'  :  'Sun',         \
              '多云':  'Cloudy',      \
              '阴'  :  'Cloudy',      \
-			 '小雨':  'Drizzle',     \
-			 '中雨':  'Rain',        \
-			 '大雨':  'Heavy Rain'}
+             '小雨':  'Drizzle',     \
+             '中雨':  'Rain',        \
+             '大雨':  'Heavy Rain'}
 
 DAY_NIGHT = {'白天':  'Daytime',     \
              '夜间':  'Nighttime'}
